@@ -1,0 +1,57 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Eesha Bhaskar">
+    <meta name="description" content="Website of Eesha Bhaskar">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/tab.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <title>Eesha Bhaskar</title>
+    <script>
+        function showContent(src) {
+         // set the iframe src to the specified HTML file
+            document.getElementById('content-iframe').src = src;}
+    </script>
+</head>
+<body>
+    <!--
+         _   _    ___     ______    _    ____
+        | \ | |  / \ \   / / __ )  / \  |  _ \
+        |  \| | / _ \ \ / /|  _ \ / _ \ | |_) |
+        | |\  |/ ___ \ V / | |_) / ___ \|  _ <
+        |_| \_/_/   \_\_/  |____/_/   \_\_| \_\
+    -->
+    <div class="nav-container">
+        <a href="#" onclick="showContent('projects/about.html')" style="margin-left: 10wv; color: #F0EAD6; font-size: 2.5rem; padding: 1em;"><em>Eesha Bhaskar</em></a>
+        <nav class="navbar">
+            <a href="#" onclick="showContent('projects/jan.html')">January 2023</a>
+            <a href="#" onclick="showContent('projects/mon.html')">Monologue</a>
+            <a href="#" onclick="showContent('projects/remix.html')">Digital Remix</a>
+            <a href="#" onclick="showContent('projects/adventure.html')">Adventure</a>
+            <a href="#" onclick="showContent('projects/apr.html')">April 2023</a>
+        </nav>
+    </div>
+    <!-- MAIN -->
+    <div class="main">
+        <!--
+             _   _  ___  __  __ _____ ____   _    ____ _____
+            | | | |/ _ \|  \/  | ____|  _ \ / \  / ___| ____|
+            | |_| | | | | |\/| |  _| | |_) / _ \| |  _|  _|
+            |  _  | |_| | |  | | |___|  __/ ___ \ |_| | |___
+            |_| |_|\___/|_|  |_|_____|_| /_/   \_\____|_____|
+        -->
+        <div class="home-container" style="background-image: url('images/vermont.png');">
+            <div class="home-text-container" style="color: #F0EAD6;">
+                <h1>Digital Writing</h1>
+                <h2><em>Spring 2023</em> - Portfolio</h2>
+            </div>
+            <iframe id="content-iframe" width="40%" height="70%" style="margin-left: 40vw; display: flex; color; white; font-size: 1.5rem;" src="projects/about.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
